@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8" />
@@ -647,6 +647,29 @@
     .part-transition-slide h2::after {
       content: "」";
       left: 100%;
+    }
+
+    .part-transition-slide.ue-value-transition h2 {
+      display: grid;
+      gap: 0.28em;
+      line-height: 1.08;
+    }
+
+    .part-transition-slide.ue-value-transition h2 span {
+      display: block;
+    }
+
+    .part-transition-slide.ue-value-transition h2::before {
+      top: 0.02em;
+      right: calc(100% + 0.08em);
+      transform: translateY(-12%);
+    }
+
+    .part-transition-slide.ue-value-transition h2::after {
+      top: auto;
+      bottom: 0.02em;
+      left: calc(100% + 0.08em);
+      transform: translateY(16%);
     }
 
     @media (max-width: 900px) {
@@ -10689,9 +10712,9 @@
 
     .judgement-line {
       margin: 0;
-      max-width: 920px;
+      max-width: 1120px;
       color: var(--accent-deep);
-      font-size: clamp(24px, 2vw, 34px);
+      font-size: clamp(24px, 1.86vw, 32px);
       line-height: 1.32;
       font-weight: 950;
     }
@@ -12050,10 +12073,10 @@
 <body>
   <main class="deck" aria-live="polite">
     <section class="slide active">
-      <div class="slide-label">01 / 20</div>
-      <div class="kicker">Image 2.0 / Game UE</div>
+      <div class="slide-label">01 / 41</div>
+      <div class="kicker">Image 2.0 × 游戏交互设计</div>
       <h1 class="cover-title"><span class="title-line">我们说的是</span><span class="title-line title-line-question"><span>同一个「</span><span class="title-hot">爽</span><span class="title-close">」</span><span class="title-question">吗？</span></span></h1>
-      <p class="lead cover-lead"><span>当大家都点头时，误会可能已经开始了。</span><span>今天聊聊：怎么用 Image 2.0，把脑子里的方向先拿到桌面上。</span></p>
+      <p class="lead cover-lead"><span>大家都说“懂了”的时候，</span><span>脑子里可能根本不是同一张图。</span></p>
       <div class="tag-row">
         <span class="tag">更爽一点</span>
         <span class="tag">更沉浸一点</span>
@@ -12068,9 +12091,9 @@
     </section>
 
     <section class="slide">
-      <div class="slide-label">02 / 20</div>
+      <div class="slide-label">02 / 41</div>
       <div class="kicker">需求会现场</div>
-      <h2>需求会上，最容易被点头的三句话</h2>
+      <h2>需求会上，大家常常会这么说</h2>
       <div class="meeting-scene">
         <div class="speech-card">
           <div class="q-person"><span></span></div>
@@ -12085,14 +12108,14 @@
           <div class="bubble"><span class="quote-mark quote-open">“</span><span class="bubble-text">奖励感，再强一点。</span><span class="quote-mark quote-close">”</span></div>
         </div>
       </div>
-      <div class="quote">大家都点头。误会，也从这一刻开始。</div>
+      <div class="quote">会好像开得很顺，但... 问题也埋下了。</div>
     </section>
 
     <section class="slide divider">
-      <div class="slide-label">03 / 20</div>
-      <div class="kicker">同一句需求，三种脑补</div>
-      <h2>你说：更爽一点</h2>
-      <p class="lead">但大家脑子里的画面，可能完全不同。</p>
+      <div class="slide-label">03 / 41</div>
+      <div class="kicker">同一句话，不同画面</div>
+      <h2>“更爽一点”到底是哪种爽？</h2>
+      <!-- <p class="lead">有人想到特效，有人想到奖励，也有人只是想别挡操作。</p> -->
       <div class="brain-groups">
         <div class="brain-card">
           <div class="brain-icon" aria-hidden="true">
@@ -12109,7 +12132,7 @@
               <path d="m12 12 4-4" />
             </svg>
           </div>
-          <h3><span class="brain-key">表现</span><span class="brain-suffix">脑补</span></h3>
+          <h3><span class="brain-key">表现</span></h3>
           <p><span>更大的特效</span><span>更戏剧化的呈现</span></p>
         </div>
         <div class="brain-card">
@@ -12118,7 +12141,7 @@
               <path d="M13 2 3 14h8l-1 8 11-14h-8l0-6Z" />
             </svg>
           </div>
-          <h3><span class="brain-key">反馈</span><span class="brain-suffix">脑补</span></h3>
+          <h3><span class="brain-key">反馈</span></h3>
           <p><span>更强的反馈</span><span>更明显的奖励</span></p>
         </div>
         <div class="brain-card">
@@ -12128,33 +12151,31 @@
               <path d="m3 19 8-7-8-7v14Z" />
             </svg>
           </div>
-          <h3><span class="brain-key">节奏</span><span class="brain-suffix">脑补</span></h3>
+          <h3><span class="brain-key">节奏</span></h3>
           <p><span>更快的节奏</span><span>更少的操作阻力</span></p>
         </div>
       </div>
-      <div class="quote">我们以为在讨论方案，其实只是在交换形容词。</div>
+      <div class="quote">大家对上的只是形容词，而不是画面。</div>
     </section>
 
     <section class="slide value-claim-slide">
-      <div class="slide-label">04 / 22</div>
-      <div class="kicker">先把那张图拿出来</div>
+      <div class="slide-label">04 / 41</div>
+      <div class="kicker">所以问题来了</div>
       <div class="value-claim">
         <div class="value-claim-mark" aria-hidden="true"></div>
         <div class="value-claim-copy">
-          <div class="soft-line">UE 不是缺少思考，而是很多思考还没被看见。</div>
+          <div class="soft-line">怎么把那个画面拿出来讨论？</div>
           <div class="main-line">
-            <span>Image 2.0 的价值，</span>
-            <span>是把脑子里的方向提前变成</span>
-            <span><strong>团队能讨论的画面</strong>。</span>
+            <span>先用 <strong>Image 2.0</strong> 把它画出来。</span>
           </div>
         </div>
       </div>
     </section>
 
     <section class="slide small-slide brain-shot-slide">
-      <div class="slide-label">05 / 22</div>
-      <div class="kicker">给团队第一张“脑内截图”</div>
-      <h2>Image 2.0：把方向放到桌面上</h2>
+      <div class="slide-label">05 / 41</div>
+      <div class="kicker">可讨论的“脑内截图”</div>
+      <h2>先有一张图，大家才知道在聊什么</h2>
       <div class="brain-shot-layout">
         <div class="brain-shot-card">
           <div class="map-node">
@@ -12167,7 +12188,7 @@
               <span class="idea-dot dot-c"></span>
             </div>
             <div class="map-copy">
-              <small>还在脑子里</small>
+              <small>脑子里</small>
               <strong>方向</strong>
               <p>爽感 / 沉浸 / 奖励 / 节奏</p>
             </div>
@@ -12182,41 +12203,34 @@
               <span class="screen-card"></span>
             </div>
             <div class="map-copy">
-              <small>放到桌面上</small>
+              <small>图上</small>
               <strong>画面</strong>
-              <p>能被指着讨论、比较、继续推进</p>
+              <p>指问题 / 再修改 / 往下聊</p>
             </div>
           </div>
         </div>
         <div class="brain-shot-questions">
-          <div class="brain-question"><span class="mini-icon icon-direction" aria-hidden="true"></span><span>方向对不对？</span></div>
-          <div class="brain-question"><span class="mini-icon icon-emotion" aria-hidden="true"></span><span>情绪到没到？</span></div>
-          <div class="brain-question"><span class="mini-icon icon-layer" aria-hidden="true"></span><span>层级清不清楚？</span></div>
-          <div class="brain-question"><span class="mini-icon icon-go" aria-hidden="true"></span><span>值不值得继续？</span></div>
+          <div class="brain-question"><span class="mini-icon icon-direction" aria-hidden="true"></span><span>方向对吗？</span></div>
+          <div class="brain-question"><span class="mini-icon icon-emotion" aria-hidden="true"></span><span>情绪到了吗？</span></div>
+          <div class="brain-question"><span class="mini-icon icon-layer" aria-hidden="true"></span><span>层级清楚吗？</span></div>
+          <div class="brain-question"><span class="mini-icon icon-go" aria-hidden="true"></span><span>值得继续吗？</span></div>
         </div>
       </div>
       <div class="brain-shot-caption">
-        <div class="caption-main">它不替你做 UI，<strong>它降低表达成本</strong>。</div>
-        <div class="cost-chain" aria-label="表达成本从脑内到共识的损耗">
-          <span>脑内 100 分</span>
-          <i class="chain-arrow" aria-hidden="true">→</i>
-          <span>口头 60 分</span>
-          <i class="chain-arrow" aria-hidden="true">→</i>
-          <span>图上共识</span>
-        </div>
+        <div class="caption-main">这张图不一定对，<strong>但它让误会早点出现</strong>。</div>
       </div>
     </section>
 
-    <section class="slide part-transition-slide">
-      <div class="slide-label">06 / 38</div>
-      <h2>怎么理解 Image 2.0？</h2>
+    <section class="slide part-transition-slide ue-value-transition">
+      <div class="slide-label">06 / 41</div>
+      <h2><span>Image 2.0 大家都见过了。</span><span>它对 UE 到底有什么用？</span></h2>
     </section>
 
     <section class="slide small-slide part2-flow">
-      <div class="slide-label">05 / 21</div>
-      <div class="kicker">工具定义</div>
-      <h2>它不是更会画，是开始懂界面</h2>
-      <p class="lead">对 UE 来说，Image 2.0 是把模糊需求转成界面假设的工具。</p>
+      <div class="slide-label">07 / 41</div>
+      <div class="kicker">为什么是它</div>
+      <h2>不只会画图，还开始懂界面了</h2>
+      <p class="lead">对 UE 来说，Image 2.0 是能把模糊需求转成界面假设的工具。</p>
       <div class="hypothesis-flow">
         <div class="hypothesis-panel">
           <h3>模糊需求</h3>
@@ -12242,14 +12256,14 @@
           </div>
         </div>
       </div>
-      <p class="slide-punchline">它生成的不是答案图，而是可比较的假设图。</p>
+      <p class="slide-punchline">我们不需要它直接给答案，假设本身就有价值。</p>
     </section>
 
     <section class="slide small-slide tool-roles">
-      <div class="slide-label">06 / 21</div>
+      <div class="slide-label">08 / 41</div>
       <div class="kicker">工具差异</div>
       <h2>会画图，不等于会聊界面</h2>
-      <p class="lead">差别不是谁更美，而是谁更靠近 UE 的讨论现场。</p>
+      <p class="lead">以前我们更多是在找灵感。现在，我们可以开始讨论界面。</p>
       <div class="tool-cards">
         <div class="tool-card">
           <div class="tool-head">
@@ -12298,24 +12312,25 @@
             <div class="tool-logo"><img src="assets/logos/openai.svg" alt="OpenAI logo" /></div>
             <h3>Image 2.0</h3>
           </div>
-          <span class="tool-role">界面讨论板</span>
+          <span class="tool-role">界面感更强</span>
           <p>更接近 UE 的界面讨论。</p>
           <ul class="tool-list">
             <li>活动页 / 抽卡页</li>
-            <li>充值页 / 奖励结算</li>
-            <li>成功反馈</li>
-            <li>多轮方向修正</li>
+            <li>布局</li>
+            <li>文字</li>
+            <li>基础控件</li>
+            <li>信息层级</li>
           </ul>
         </div>
       </div>
-      <p class="slide-punchline">以前我们更多是在找灵感。现在，我们可以开始讨论界面。</p>
+      <p class="slide-punchline">这些工具的差别不在于谁更美，而是谁更适合 UE 的讨论。</p>
     </section>
 
     <section class="slide small-slide threshold-slide">
-      <div class="slide-label">08 / 23</div>
-      <div class="kicker">为什么现在</div>
+      <div class="slide-label">09 / 41</div>
+      <div class="kicker">关键变化</div>
       <h2>为什么是现在？</h2>
-      <p class="lead">因为它跨越了 UE 的 <strong>「可讨论线」</strong>。</p>
+      <p class="lead">因为它跨过了 UE 的 <strong>「可讨论线」</strong>。</p>
       <div class="threshold-stage" aria-label="UE 可讨论线示意图">
         <div class="threshold-zone-label above">线上：能围绕界面问题讨论</div>
         <div class="threshold-zone-label below">线下：要么太抽象，要么太分散</div>
@@ -12374,12 +12389,12 @@
     </section>
 
     <section class="slide small-slide case-proof-slide">
-      <div class="slide-label">09 / 23</div>
+      <div class="slide-label">10 / 41</div>
       <div class="kicker">可讨论线之后</div>
-      <h2>过了这条线，才值得讨论</h2>
-      <p class="lead">不是看它画得多炫，而是看界面问题能不能被指着讨论。</p>
+      <h2>过了这条线，界面终于可以讨论</h2>
+      <!-- <p class="lead">不是看它画得多炫，而是看界面问题能不能被指着讨论。</p> -->
       <div class="case-proof-tags">
-        <b>能讨论的能力</b>
+        <b>能讨论的前提</b>
         <span>界面结构</span>
         <span>文字可读</span>
         <span>版式层级</span>
@@ -12434,9 +12449,9 @@
     </section>
 
     <section class="slide small-slide evidence-slide">
-      <div class="slide-label">08 / 21</div>
+      <div class="slide-label">11 / 41</div>
       <div class="kicker">内部经验补充</div>
-      <h2>先跑出一个可讨论方向</h2>
+      <h2>不仅是游戏界面，还有很多可能性</h2>
       <div class="case-evidence">
         <div class="case-wall">
           <figure class="case-tile" tabindex="0" aria-label="查看海报排版完整预览">
@@ -12499,17 +12514,17 @@
           </div>
           <div class="case-insight" data-index="04">
             <strong>定位仍是沟通参考</strong>
-            <span>细节、本地化、局部改图和专业落地，仍然要人工接住。</span>
+            <span>细节、本地化、局部改图和专业落地，仍然要人工干预。</span>
           </div>
         </div>
       </div>
     </section>
 
     <section class="slide small-slide use-map-slide">
-      <div class="slide-label">09 / 21</div>
-      <div class="kicker">UE 最该用它做什么</div>
-      <h2>UE 最该用它做四件事</h2>
-      <p class="lead">不是交稿，而是把那些难说清的部分提前可视化。</p>
+      <div class="slide-label">12 / 41</div>
+      <div class="kicker">具体用途</div>
+      <h2>我会建议优先拿它做这四类事</h2>
+      <p class="lead">不是拿来交稿，而是把那些难说清的部分提前可视化。</p>
       <div class="use-map">
         <div class="use-node use-a">
           <div class="use-icon use-icon-direction" aria-hidden="true"><span></span><span></span><span></span></div>
@@ -12540,14 +12555,14 @@
           <span>成功 / 奖励 / 解锁</span>
         </div>
       </div>
-      <p class="slide-punchline">会用 Image 2.0 的 UE，不是更会画图，而是更会把问题变成画面。</p>
+      <p class="slide-punchline">对 UE 来说，重点不是更会画图，而是更早把问题摆出来。</p>
     </section>
 
     <section class="slide small-slide recipe-slide">
-      <div class="slide-label">10 / 21</div>
+      <div class="slide-label">13 / 41</div>
       <div class="kicker">小例子</div>
       <h2>轻一下，还是隆重一下？</h2>
-      <p class="lead">同一个保存反馈，先看两种假设，再判断值不值得打断玩家。</p>
+      <p class="lead">同一个保存反馈，先把两种假设画出来，再判断值不值得打断玩家。</p>
       <div class="recipe-compare">
         <div class="recipe-card feedback-light">
           <h3>方案 A｜非打断式状态反馈</h3>
@@ -12583,10 +12598,10 @@
     </section>
 
     <section class="slide small-slide reference-translate-slide">
-      <div class="slide-label">13 / 24</div>
+      <div class="slide-label">14 / 41</div>
       <div class="case-credit">案例 from 日日</div>
       <div class="kicker">补充例子｜参考拆解 & 表现补足</div>
-      <h2>先把质感放进自己的结构里</h2>
+      <h2>如果技能 HUD 的感受更像 MOBA？</h2>
       <p class="lead">参考给质感，Figma 给结构，Image 2.0 先把感受对齐。</p>
       <div class="translate-flow">
         <article class="translate-card reference">
@@ -12624,14 +12639,14 @@
         </article>
         <div class="translate-arrow" aria-hidden="true">→</div>
         <article class="translate-card ai">
-          <h3>Image 2.0 换皮</h3>
-          <small>把表现感补到自己的框架上</small>
+          <h3>Image 2.0 合成</h3>
+          <small>把表现感放回自己的框架上</small>
           <figure class="translate-shot" tabindex="0">
             <img src="assets/AI套皮方案二.png" alt="AI 根据参考和 Figma 框生成的套皮界面方案二" />
           </figure>
           <div class="translate-preview" aria-hidden="true">
             <img src="assets/AI套皮方案二.png" alt="" />
-            <div class="translate-preview-title">Image 2.0 换皮：把参考质感落到自己的结构里，用于快速对齐表现方向。</div>
+            <div class="translate-preview-title">Image 2.0 合成：把参考质感落到自己的结构里，用于快速对齐表现方向。</div>
           </div>
           <div class="translate-tags">
             <span>套回结构</span>
@@ -12640,19 +12655,19 @@
           </div>
         </article>
       </div>
-      <div class="translate-punchline">不是让 UI 猜“像这个”，而是先看到：这个质感放进我们界面里是什么样。</div>
+      <div class="translate-punchline">不是让 UI 照着参考抄，而是先看：这个质感放进我们界面里是什么样。</div>
     </section>
 
     <section class="slide part-transition-slide">
-      <div class="slide-label">14 / 38</div>
+      <div class="slide-label">15 / 41</div>
       <h2>怎么用 Image 2.0？</h2>
     </section>
 
     <section class="slide part3-slide">
-      <div class="slide-label">11 / 20</div>
+      <div class="slide-label">16 / 41</div>
       <div class="kicker">方法入口</div>
       <h2>不要“念咒”，要发“Brief”</h2>
-      <p class="lead">对 UE 来说，AI 是协作对象，不是许愿池。</p>
+      <p class="lead">对 UE 来说，AI 不是许愿池，得先把任务说清楚。</p>
       <div class="spell-brief-stage">
         <div class="bad-prompt-orbit" aria-label="无效 prompt 关键词示意">
           <span class="prompt-ring"></span>
@@ -12678,14 +12693,14 @@
           </div>
         </div>
       </div>
-      <div class="compact-punchline">Brief 的价值，是把任务整理成 AI 能执行的结构。</div>
+      <div class="compact-punchline">Image 2.0 是个好执行者。Brief 越清楚，越少返工，也越少浪费 token。</div>
     </section>
 
     <section class="slide part3-slide cost-slide">
-      <div class="slide-label">12 / 20</div>
+      <div class="slide-label">17 / 41</div>
       <div class="kicker">成本回溯</div>
-      <h2>以前，我们先手拼一张图</h2>
-      <p class="lead">很多时间花在找图、抠图、调色，而不是判断。</p>
+      <h2>以前，为了说明一个感觉，我们先手拼一张图</h2>
+      <p class="lead">很多时间花在找素材、抠图、调色、缝合，而不是判断。</p>
       <div class="old-cost-wall">
         <div class="old-scrapbook" aria-label="过去手拼 UE 稿件墙">
           <figure class="scrap-shot"><img src="assets/oldmethod/以前的拼图1.png" alt="过去手拼 UE 稿一" /></figure>
@@ -12714,30 +12729,30 @@
           </div>
         </div>
       </div>
-      <div class="compact-punchline">把手工活省下来，把判断力用上去。</div>
+      <!-- <div class="compact-punchline">把手工活省下来，把判断力用上去。</div> -->
     </section>
 
     <section class="slide part3-slide checkin-slide">
-      <div class="slide-label">13 / 20</div>
+      <div class="slide-label">18 / 41</div>
       <div class="case-credit">案例 from 佳文</div>
       <div class="kicker">案例进化｜循环签到</div>
-      <h2>结构可用 vs 活动感可讨论</h2>
-      <p class="lead">线框证明逻辑可用，Image 2.0 把活动感提前画出来。</p>
+      <h2>UE 先定结构，Image 2.0 再补活动感</h2>
+      <p class="lead">黑白稿不用画得很满，只要把入口、奖励和循环逻辑讲清楚</p>
       <div class="before-after-wide">
         <figure class="compare-panel">
-          <span class="panel-tag">UE 图｜结构可用</span>
+          <span class="panel-tag">UE 图｜着重结构逻辑</span>
           <img src="assets/循环签到UE图.png" alt="循环签到 UE 图" />
         </figure>
         <figure class="compare-panel ai-panel">
-          <span class="panel-tag">Image 2.0｜活动感可讨论</span>
+          <span class="panel-tag">Image 2.0｜讨论活动感</span>
           <img src="assets/循环签到-image2生图.png" alt="循环签到 Image 2.0 生图" />
         </figure>
       </div>
-      <div class="compact-punchline">风险被提前了，讨论从“脑补”变成了“指认”。</div>
+      <div class="compact-punchline">省下手工拼贴的时间，可以更早的做设计判断。</div>
     </section>
 
     <section class="slide part3-slide wireframe-slide">
-      <div class="slide-label">14 / 20</div>
+      <div class="slide-label">19 / 41</div>
       <div class="case-credit">案例 from 佳奕</div>
       <div class="kicker">方法论一｜线框也是输入</div>
       <h2>线框图也是一种 Brief</h2>
@@ -12767,17 +12782,17 @@
         <span data-index="02">风格有源：材质、光影和 UI 语气来自参考</span>
         <span data-index="03">世界观落地：地图和氛围补成可讨论画面</span>
       </div>
-      <div class="compact-punchline">线框给秩序，参考给语气。</div>
+      <!-- <div class="compact-punchline">线框给秩序，参考给语气。</div> -->
     </section>
 
     <section class="slide part3-slide context-slide">
-      <div class="slide-label">15 / 20</div>
-      <div class="kicker">方法论二｜文字 Brief 补语境</div>
+      <div class="slide-label">20 / 41</div>
+      <div class="kicker">方法论二｜文字 Brief </div>
       <h2>Prompt 是给线框补语境</h2>
-      <p class="lead">先讲清场景和情绪，再让 Image 2.0 接住结构。</p>
+      <p class="lead">光有结构还不够，还要告诉它：这是一个什么时刻。</p>
       <div class="context-brief-layout">
         <figure class="context-formula-card input-card">
-          <div class="formula-label">Input 1: 物理规则 <span>UE 骨架图</span></div>
+          <div class="formula-label">Input 1: UE 骨架图 <span>结构不能乱</span></div>
           <div class="context-media">
             <img src="assets/替换配方UE图.png" alt="替换配方 UE 图" />
           </div>
@@ -12808,7 +12823,7 @@
         </div>
         <div class="formula-operator" aria-hidden="true">→</div>
         <figure class="context-formula-card output-card">
-          <div class="formula-label">Output: 共识方案 <span>Image 2.0</span></div>
+          <div class="formula-label">Output: 先看一版 <span>Image 2.0</span></div>
           <div class="context-media">
             <img src="assets/替换配方image2.png" alt="替换配方 Image 2.0 图" />
             <span class="render-hotspot structure"></span>
@@ -12826,9 +12841,9 @@
     </section>
 
     <section class="slide part3-slide reference-slide">
-      <div class="slide-label">16 / 20</div>
+      <div class="slide-label">21 / 41</div>
       <div class="kicker">方法论三｜参考图拆层喂</div>
-      <h2>参考图要先拆层</h2>
+      <h2>参考图要先拆开看</h2>
       <p class="lead">告诉 AI 要哪一层，也告诉它哪一层不能碰。</p>
       <div class="reference-deck-layout">
         <figure class="reference-large reference-scan-board">
@@ -12848,12 +12863,12 @@
           <div class="layer-card"><strong>风险层</strong><span>具体角色、Logo、文案和过度相似构图不能照搬。<b class="risk-line">拒绝像素级搬运，只取逻辑，不取皮肤。</b></span></div>
         </div>
       </div>
-      <div class="compact-punchline">参考不是抄皮，是拆结构和风险。</div>
+      <!-- <div class="compact-punchline">参考不是抄皮，是拆结构和风险。</div> -->
     </section>
 
     <section class="slide part3-slide effort-slide">
-      <div class="slide-label">17 / 20</div>
-      <div class="kicker">终极审题｜精力分配</div>
+      <div class="slide-label">22 / 41</div>
+      <div class="kicker">方法论四｜精力分配</div>
       <h2>看图不是选美，是“分配精力”</h2>
       <p class="lead">不问哪张最好看，先问哪张值得投入。</p>
       <div class="review-final-layout effort-ladder">
@@ -12881,14 +12896,14 @@
           </div>
         </div>
       </div>
-      <div class="compact-punchline">AI 承接重复算力，UE 保留关键判断。</div>
+      <div class="compact-punchline">AI 帮我们省下来的时间，要花在这些判断上。</div>
     </section>
 
     <section class="slide part3-slide gift-slide gift-pipeline-slide">
-      <div class="slide-label">18 / 20</div>
+      <div class="slide-label">23 / 41</div>
       <div class="kicker">落地案例｜好友赠礼</div>
       <h2>5 分钟线框，换来动效共识</h2>
-      <p class="lead">用一条可控工具链，把“仪式感”变成可播放的参考。</p>
+      <p class="lead">用一条可控的工作流，把“仪式感”具现化。</p>
       <div class="gift-pipeline-map">
         <article class="pipeline-card">
           <div class="pipeline-title">UE Wireframe <span>输入骨架</span></div>
@@ -12951,14 +12966,14 @@
           <div class="pipeline-note">不写长篇动效文档，直接给 UI 和动效一段能对齐的参考。</div>
         </article>
       </div>
-      <div class="compact-punchline">把“感觉”变成可播放的共识。</div>
+      <!-- <div class="compact-punchline">把“感觉”变成可播放的共识。</div> -->
     </section>
 
     <section class="slide part3-slide gift-slide gift-strategy-slide">
-      <div class="slide-label">19 / 20</div>
+      <div class="slide-label">24 / 41</div>
       <div class="kicker">落地案例｜双轨动效策略</div>
       <h2>同样赠礼，两种节奏</h2>
-      <p class="lead">送出要快，收礼要重。</p>
+      <!-- <p class="lead">送出要快，收礼要重。</p> -->
       <div class="gift-strategy-layout">
         <article class="strategy-card fast">
           <div class="strategy-head">
@@ -12999,11 +13014,11 @@
           </div>
         </article>
       </div>
-      <div class="compact-punchline">高频操作要极简顺滑，社交峰值要重度仪式。可见即共识。</div>
+      <div class="compact-punchline">UE 要判断的，不是动效够不够华丽，而是哪一刻该轻、哪一刻该重。</div>
     </section>
 
     <section class="slide part3-slide cook-funnel-slide">
-      <div class="slide-label">23 / 38</div>
+      <div class="slide-label">25 / 41</div>
       <div class="kicker">烹饪系统｜主界面方案发散</div>
       <h2>用 AI 替 Figma 探路</h2>
       <p class="lead">先发散布局，再回到 Figma 收敛结构。</p>
@@ -13042,14 +13057,14 @@
           </figure>
         </div>
       </div>
-      <div class="compact-punchline">AI 负责探路，UE 在 Figma 里把可行方向变成可讨论结构。</div>
+      <div class="compact-punchline">AI 负责探路，UE 在 Figma 里完成真正可落地的设计。</div>
     </section>
 
     <section class="slide part3-slide cook-pot-assets-slide">
-      <div class="slide-label">24 / 38</div>
+      <div class="slide-label">26 / 41</div>
       <div class="kicker">烹饪系统｜换锅具评估</div>
       <h2>把“好看”变成资源清单</h2>
-      <p class="lead">从锅具设定到动效，资源成本一路被看见。</p>
+      <p class="lead">从锅具设定到动效，资源成本很直观地被看见。</p>
       <div class="pot-workflow">
         <article class="pot-step pot-setup-step">
           <div class="pot-step-head"><span>01</span><strong>锅具设定</strong></div>
@@ -13096,10 +13111,10 @@
     </section>
 
     <section class="slide part3-slide cook-performance-slide">
-      <div class="slide-label">25 / 38</div>
+      <div class="slide-label">27 / 41</div>
       <div class="kicker">烹饪系统｜表演分镜</div>
       <h2>把演出拆成 4 个关键帧</h2>
-      <p class="lead">分镜让原画、特效、动效和结算承接提前进场。</p>
+      <p class="lead">分镜一出来，原画、特效、动效和 UI 就可以提前评估表现跟成本。</p>
       <div class="performance-layout">
         <figure class="performance-board">
           <img src="assets/cook/烹饪表演分镜图.png" alt="烹饪表演四格关键帧分镜图" />
@@ -13116,7 +13131,7 @@
     </section>
 
     <section class="slide part3-slide foodbook-slide foodbook-pipeline-slide">
-      <div class="slide-label">26 / 38</div>
+      <div class="slide-label">28 / 41</div>
       <div class="case-credit">案例 from 佳奕</div>
       <div class="kicker">烹饪系统｜图鉴内容资产</div>
       <h2>从批量内容到可演出的 UI</h2>
@@ -13151,7 +13166,7 @@
     </section>
 
     <section class="slide part3-slide banquet-state-slide">
-      <div class="slide-label">27 / 38</div>
+      <div class="slide-label">29 / 41</div>
       <div class="kicker">烹饪系统｜流水席局内状态</div>
       <h2>从三张分镜，到三段功能</h2>
       <p class="lead">先定吃饭前、中、后的场景，再画局内状态。</p>
@@ -13180,11 +13195,11 @@
           </article>
         </div>
       </div>
-      <div class="compact-punchline">分镜定情境，UE 把情境翻译成功能状态。</div>
+      <!-- <div class="compact-punchline">分镜定情境，UE 把情境翻译成功能状态。</div> -->
     </section>
 
     <section class="slide part3-slide hall-entry-slide">
-      <div class="slide-label">28 / 38</div>
+      <div class="slide-label">30 / 41</div>
       <div class="kicker">烹饪系统｜大厅入口与动作资源</div>
       <h2>入口不是按钮，是一段场景动作</h2>
       <p class="lead">让模型、动作和镜头节奏直接进入评估。</p>
@@ -13204,14 +13219,14 @@
           <video src="assets/cook/大厅烹饪动作.mp4" muted controls preload="auto" playsinline aria-label="大厅烹饪动作视频"></video>
         </div>
       </div>
-      <div class="compact-punchline">入口背后是一整段可评估的动作和资源链路。</div>
+      <div class="compact-punchline">这时候讨论的就不是“按钮放哪”，而是这段体验做不做得起。</div>
     </section>
 
     <section class="slide part3-slide scene-slide translation-matrix-slide">
-      <div class="slide-label">29 / 38</div>
+      <div class="slide-label">31 / 41</div>
       <div class="kicker">烹饪系统｜跨职能落地</div>
       <h2>一张分镜，翻译成多种执行语言</h2>
-      <p class="lead">AI 画可能性，UE 翻译成各职能能执行的判断。</p>
+      <p class="lead">同一张图，不同职能看的不是同一件事。</p>
       <div class="translation-layout">
         <div class="film-strip">
           <figure class="prototype-shot">
@@ -13234,16 +13249,16 @@
           <div class="role-card" data-focus="fx"><strong>动效 / 特效看节奏</strong><span>烟火浓度、Buff 飞入、转场衔接和结果爆点。</span></div>
         </div>
       </div>
-      <div class="compact-punchline">UE 把可能性翻译成执行判断。</div>
+      <div class="compact-punchline">UE 要做的，是展现可能性，同时让每个职能提前做可行性判断。</div>
     </section>
 
     <section class="slide part-transition-slide">
-      <div class="slide-label">30 / 38</div>
+      <div class="slide-label">32 / 41</div>
       <h2>当它不只是一张图，会发生什么？</h2>
     </section>
 
     <section class="slide advanced-past-slide">
-      <div class="slide-label">27 / 35</div>
+      <div class="slide-label">33 / 41</div>
       <div class="kicker">扩展案例｜从零定义世界</div>
       <h2>当我们要从零定义一个世界？</h2>
       <p class="lead">过去，我们把参考、拼贴和概念交给下游去吸收。</p>
@@ -13260,15 +13275,15 @@
           <div class="doc-card warning">痛点：过度考验美术吸收能力，落地效果全凭脑补。</div>
         </div>
       </div>
-      <div class="compact-punchline">不是没有努力，而是输入太散，团队很难同时脑补到同一张图。</div>
+      <div class="compact-punchline">我们很努力，但是输入太散，团队很难同时脑补到同一张图。</div>
     </section>
 
     <section class="slide skill-sop-slide">
-      <div class="slide-label">28 / 35</div>
+      <div class="slide-label">34 / 41</div>
       <div class="case-credit">案例 from 佳文</div>
       <div class="kicker">脑洞流水线｜game-ui-concept-board</div>
-      <h2>从脑洞，到 5 步推演</h2>
-      <p class="lead skill-sop-lead"><span>把主观的“感觉”，拆解成一套可复用的参数包和产出物。</span><button type="button" class="skill-open-button" data-open-full-skill>完整 Skill</button></p>
+      <h2>把“感觉”拆成 5 个问题</h2>
+      <p class="lead skill-sop-lead"><span>以前我们的各种方法，拆解成一套可复用的skill。</span><button type="button" class="skill-open-button" data-open-full-skill>完整 Skill</button></p>
       <div class="sop-flow">
         <div class="sop-step">
           <b>01</b>
@@ -13302,15 +13317,15 @@
         <span>中性背景便于横向对比</span>
         <span>输出便于挑选、混搭、深化</span>
       </div>
-      <div class="compact-punchline">用工程化 SOP，稳定放大脑洞。</div>
+      <div class="compact-punchline">用工程化 SOP，稳定地产出不同方向的脑洞。</div>
     </section>
 
     <section class="slide concept-board-slide">
-      <div class="slide-label">29 / 35</div>
+      <div class="slide-label">35 / 41</div>
       <div class="case-credit">案例 from 佳文</div>
       <div class="kicker">脑洞结果｜差异来自结构</div>
-      <h2>要差异，不要换色</h2>
-      <p class="lead">同一个 IP，也要在字体、配色、组件和语言上拉开。</p>
+      <h2>三套方向，不能只是三套配色</h2>
+      <p class="lead">字体、组件、构图和叙事语气都拉开差异。</p>
       <div class="concept-board-layout">
         <figure class="concept-board-hero">
           <img src="assets/海贼王IP脑洞.png" alt="海贼冒险世界 UI 风格脑洞方案板" />
@@ -13328,11 +13343,11 @@
           </figure>
         </aside>
       </div>
-      <div class="compact-punchline">先把差异化方向摆上桌。</div>
+      <div class="compact-punchline">同一个IP下，也能有不同的设计语言和界面气质。</div>
     </section>
 
     <section class="slide visual-buffet-slide">
-      <div class="slide-label">30 / 35</div>
+      <div class="slide-label">36 / 41</div>
       <div class="case-credit">案例 from 佳文</div>
       <div class="kicker">终极交付物｜视觉自助餐</div>
       <h2>给团队一张“视觉自助餐”</h2>
@@ -13353,13 +13368,13 @@
         <span>中性底色</span>
         <span>便于挑选、混搭、继续深化</span>
       </div>
-      <div class="compact-punchline">把抽象脑洞，变成可拆解的视觉资产。</div>
+      <div class="compact-punchline">原本说不清的感觉，变成了能拆开看的画面，也变成了可以使用的UI资源。</div>
     </section>
 
     <section class="slide dynamic-bridge-slide">
-      <div class="slide-label">31 / 35</div>
-      <div class="kicker">组合工作流｜动态体验片段</div>
-      <h2>从静态共识，到动态体验片段</h2>
+      <div class="slide-label">37 / 41</div>
+      <div class="kicker">组合工作流｜验证节奏</div>
+      <h2>让画面动起来</h2>
       <p class="lead">静态图定方向，组合工作流继续验证节奏。</p>
       <div class="combo-formula">
         <div class="combo-track">
@@ -13394,10 +13409,10 @@
     </section>
 
     <section class="slide small-slide xflow-slide">
-      <div class="slide-label">32 / 35</div>
+      <div class="slide-label">38 / 41</div>
       <div class="kicker">组合工作流｜X 案例</div>
       <h2>角色、界面、视频串成一条线</h2>
-      <p class="lead">Image 2.0 不孤立出图，而是进入一条可讨论流程。</p>
+      <p class="lead">一张图不是终点，它可以继续变成界面状态、脚本和视频片段。</p>
       <div class="xflow-grid" aria-label="Image 2.0、Seedance 与 LibTV 组合工作流示例">
         <div class="xflow-card">
           <div class="xflow-topline"><span class="xflow-step">STEP 1</span><span class="xflow-tool">Midjourney</span></div>
@@ -13450,7 +13465,7 @@
         </div>
       </div>
       <div class="xflow-meta">
-        <span><strong>讲法重点：</strong>LibTV 组织过程，Image 2.0 负责状态画面，Seedance 把状态之间的变化做成可讨论的视频片段。</span>
+        <span>LibTV 组织过程，Image 2.0 负责状态画面，Seedance 把状态之间的变化做成可讨论的视频片段。</span>
         <span class="xflow-links">
           <a href="https://x.com/0xInk_/status/2048809000121360649" target="_blank" rel="noopener noreferrer">X 原帖</a>
           <a href="https://x.com/i/status/2048811200981709149" target="_blank" rel="noopener noreferrer">视频脚本</a>
@@ -13464,10 +13479,10 @@
     </section>
 
     <section class="slide designer-core-slide">
-      <div class="slide-label">33 / 35</div>
-      <div class="kicker">边界与清醒｜UE 的基本盘</div>
+      <div class="slide-label">39 / 41</div>
+      <div class="kicker">UE 和 AI 的边界</div>
       <h2>旧经验不会失效，只是判断对象变了</h2>
-      <p class="lead">AI 可以穷举视觉可能性，但交互设计师的立身之本依然要握在自己手里。</p>
+      <p class="lead">AI 能跑出很多可能性，但交互设计师的立身之本依然要握在自己手里。</p>
       <div class="core-grid">
         <div class="core-card"><b>01</b><strong>信息架构</strong><span>谁先出现、谁服务谁、哪些信息必须被玩家第一眼读到。</span></div>
         <div class="core-card"><b>02</b><strong>状态反馈</strong><span>成功、失败、等待、打断、恢复，每个状态都要有清晰承接。</span></div>
@@ -13478,14 +13493,14 @@
     </section>
 
     <section class="slide divider closing-judgement-slide">
-      <div class="slide-label">34 / 35</div>
+      <div class="slide-label">40 / 41</div>
       <div class="kicker">结尾</div>
       <h2>让判断更早发生</h2>
       <p class="judgement-line">Image 2.0 的价值，不是让 UE 少思考，而是让思考被看见。</p>
     </section>
 
     <section class="slide divider qa-slide">
-      <div class="slide-label">35 / 35</div>
+      <div class="slide-label">41 / 41</div>
       <h2>谢谢</h2>
       <div class="qa-thanks">Q & A</div>
     </section>
@@ -14046,3 +14061,4 @@
   </script>
 </body>
 </html>
+
